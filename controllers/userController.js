@@ -82,7 +82,7 @@ const checkUser = asyncHandler(async (req, res) => {
     user = await User.create({
       name,
       email,
-      password, // Ensure this is hashed in your User model or middleware
+      password, 
     });
 
     res.status(201).json({
